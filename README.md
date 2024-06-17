@@ -23,7 +23,7 @@
 Sensor DHT22 para medição de temperatura e umidade Sensor LDR para medição de luminosidade LEDs (Verde, Amarelo e Vermelho) para indicar a probabilidade de baixa visibilidade Buzzer para fornecer alertas sonoros Display LCD para exibir os dados encontrados Funcionamento do Sistema O sistema de coleta de dados ambientais usando os sensores e calcula a probabilidade de baixa visibilidade. Com base nessa probabilidade, aciona os LEDs e o buzzer para fornecer feedback visual e sonoro. O display LCD exibe os valores calculados e a probabilidade calculada.
 </p>
 
-<img src="https://imgur.com/a/IpbNJ3D" alt="projeto"></img>
+<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="link do video" height="30" width="40" />
 
 <h3 align="left">Vídeo explicativo:</h3>
 <p align="left">
