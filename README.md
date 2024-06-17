@@ -1,17 +1,11 @@
-<h3 align="center">Este repositório contém o código e os recursos necessários para o projeto Synthica, uma solução para o problema de baixa visibilidade na Fórmula E.</h3>
+<h1 align="center">Olá 👋, Nós Somos A Synthica</h1>
+<h3 align="center">Uma empresa fictícia criada por estudantes de Engenharia de Software da FIAP</h3>
 
-- 🔭 Descrição do Projeto **A Fórmula E é uma categoria emocionante de corridas de carros elétricos, mas enfrenta um desafio significativo devido à baixa visibilidade. Condições climáticas adversas, pistas urbanas com iluminação irregular e a velocidade dos carros podem comprometer a segurança dos pilotos e a experiência dos espectadores. Para abordar esse problema, a equipe Synthica desenvolveu um sistema de monitoramento de ambiente que ajuda a prever a visibilidade em diferentes condições de corrida.**
-
-- 🤝 Equipe **Vitor Alves Titus Eskes / RM555137 Nathan Craveiro Gonçalves Amin / RM555508 Gabriel Matias Simões / RM556171**
-
-- 👨‍💻 Como Utilização [Montagem do Hardware: Conecte os componentes conforme o esquema de conexão fornecido no código. Configuração do Código: Carregue o código no Arduino IDE. -se de instalar as bibliotecas certifique-se de permissão (DHT e LiquidCrystal). Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicam a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.](Montagem do Hardware: Conecte os componentes conforme o esquema de ligação fornecido no código. Configuração do Código: Carregue o código no Arduino IDE. Verifique-se de instalar as bibliotecas de permissão (DHT e LiquidCrystal). Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicando a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.)
-
-- ⚡ Componentes Utilizados **Sensor DHT22 para medição de temperatura e umidade Sensor LDR para medição de luminosidade LEDs (Verde, Amarelo e Vermelho) para indicar a probabilidade de baixa visibilidade Buzzer para fornecer alertas sonoros Display LCD para exibir os dados encontrados Funcionamento do Sistema O sistema de coleta de dados ambientais usando os sensores e calcula a probabilidade de baixa visibilidade. Com base nessa probabilidade, aciona os LEDs e o buzzer para fornecer feedback visual e sonoro. O display LCD exibe os valores calculados e a probabilidade calculada.**
-
-<h3 align="left">Conecte-se comigo:</h3>
+<h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://www.youtube. com/c/aaaaaaaa" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/ Social/youtube.svg" alt="aaaaaaaa" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/linkedin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/link do video" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="link do video" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">Idiomas e ferramentas:</h3>
-<p align ="esquerda"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" largura="40" altura="40"/> </a> </p>
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> </p>
