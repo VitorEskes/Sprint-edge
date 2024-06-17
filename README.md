@@ -42,10 +42,10 @@ img src="https://github.com/VitorEskes/Sprite-edge/assets/72994409/3a770b1c-64e7
 
 <h3 align="left">Vídeo explicativo:</h3>
 <p align="left">
-<a href="https://www.youtube.com/c/link do video" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="link do video" height="30" width="40" /></a>
+<a href="https://youtu.be/AyBM0FrU1Lc" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="link do video" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">Linguagem ultilizada </h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/></a></p><br>
+<h3 align="left">Linguagem ultilizada</h3>
+<p align="left"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/></p><br>
 
 <h3>Onde a inovação corre solta, o futuro é elétrico e a Sustentabilidade ganha vida!</h3>
