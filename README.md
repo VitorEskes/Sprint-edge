@@ -8,7 +8,7 @@
 <p>
 <li>Vitor Alves Titus Eskes RM555137 </li><li> Nathan Craveiro Gonçalves Amin  RM555508 </li><li> Gabriel Matias Simões / RM556171 </li></p>
 
-<h2> :man_technologist: Como Utilização</h2>h2> 
+<h2> :man_technologist: Como Utilização</h2> 
 [Montagem do Hardware: Conecte os componentes conforme o esquema de conexão fornecido no código. Configuração do Código: Carregue o código no Arduino IDE. -se de instalar as bibliotecas certifique-se de permissão (DHT e LiquidCrystal). Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicam a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.](Montagem do Hardware: Conecte os componentes conforme o esquema de ligação fornecido no código. Configuração do Código: Carregue o código no Arduino IDE. Verifique-se de instalar as bibliotecas de permissão (DHT e LiquidCrystal). Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicando a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.)
 
 <h2> :zap: Componentes Utilizados</h2>h2> 
