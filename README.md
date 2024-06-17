@@ -4,7 +4,7 @@
 <h2> :telescope: Descrição do Projeto</h2> 
 <p>A Fórmula E é uma categoria emocionante de corridas de carros elétricos, mas enfrenta um desafio significativo devido à baixa visibilidade. Condições climáticas adversas, pistas urbanas com iluminação irregular e a velocidade dos carros podem comprometer a segurança dos pilotos e a experiência dos espectadores. Para abordar esse problema, a equipe Synthica desenvolveu um sistema de monitoramento de ambiente que ajuda a prever a visibilidade em diferentes condições de corrida.</p>
 
-<h2> :handshake: Equipe</h2>h2> 
+<h2> :handshake: Equipe</h2> 
 <p>
   <li>Vitor Alves Titus Eskes RM555137 </li>
   <li> Nathan Craveiro Gonçalves Amin  RM555508 </li>
