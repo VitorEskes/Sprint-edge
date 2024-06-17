@@ -1,0 +1,147 @@
+#include <LiquidCrystal.h>
+#include <DHT.h>
+
+#define DHTPIN 9     // Pino digital onde está conectado o DHT22
+#define DHTTYPE DHT22   // Tipo do sensor DHT
+
+DHT dht(DHTPIN, DHTTYPE);
+
+// Inicialização dos pinos
+int led_verde_pin = 13;    // Pino para o LED Verde
+int led_amarelo_pin = 12;  // Pino para o LED Amarelo
+int led_vermelho_pin = 11; // Pino para o LED Vermelho
+int ldr_pin = A0;          // Pino para o sensor LDR
+int buzzer_pin = 8;        // Pino para o Buzzer
+
+// Inicialização do display LCD
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2); // Pinos RS, E, D4, D5, D6, D7
+
+void mostrarLogo() {
+  lcd.clear();
+  lcd.setCursor(4, 0);
+  lcd.print("Synthica");
+  delay(2000); // Espera 2 segundos para mostrar o logo
+}
+
+void setup() {
+  pinMode(led_verde_pin, OUTPUT);
+  pinMode(led_amarelo_pin, OUTPUT);
+  pinMode(led_vermelho_pin, OUTPUT);
+  pinMode(buzzer_pin, OUTPUT); // Configura o pino do Buzzer como saída
+  lcd.begin(16, 2); // Inicializa o display LCD com 16 colunas e 2 linhas
+  dht.begin(); // Inicializa o sensor DHT22
+  Serial.begin(9600);
+
+  mostrarLogo(); // Chama a função para mostrar o logo
+}
+
+float calcularProbabilidadeDeChuva(float luminosidade, float temperatura, float umidade) {
+  float probabilidade = 0;
+
+  // Aumenta a probabilidade com base na umidade
+  if (umidade > 70) {
+    probabilidade += 30;
+  } else if (umidade > 50) {
+    probabilidade += 20;
+  } else if (umidade > 30) {
+    probabilidade += 10;
+  }
+
+  // Aumenta a probabilidade com base na temperatura
+  if (temperatura < 10 || temperatura > 30) {
+    probabilidade += 20;
+  } else if (temperatura < 15 || temperatura > 25) {
+    probabilidade += 10;
+  }
+
+  // Aumenta a probabilidade com base na luminosidade
+  if (luminosidade < 30) {
+    probabilidade += 30;
+  } else if (luminosidade < 50) {
+    probabilidade += 20;
+  }
+
+  // Garante que a probabilidade não ultrapasse 100%
+  if (probabilidade > 100) {
+    probabilidade = 100;
+  }
+
+  return probabilidade;
+}
+
+void exibirMensagemComValor(float valor, float limiteBaixo, float limiteAlto, String tipo) {
+  lcd.clear();
+  if (valor < limiteBaixo) {
+    lcd.print(tipo + ": Baixa");
+  } else if (valor > limiteAlto) {
+    lcd.print(tipo + ": Alta");
+  } else {
+    lcd.print(tipo + ": OK");
+  }
+  lcd.setCursor(0, 1);
+  lcd.print("Valor: ");
+  lcd.print(valor);
+}
+
+void loop() {
+  // Lê o valor do sensor LDR e reescala para um intervalo de 0 a 100
+  int luminosidade = map(analogRead(ldr_pin), 0, 1023, 0, 100);
+  Serial.print("Luminosidade: ");
+  Serial.println(luminosidade);
+
+  delay(2000); // Espera 2 segundos antes de ler a temperatura
+
+  // Lê a temperatura e umidade do sensor DHT22
+  float temperatura = dht.readTemperature();
+  float umidade = dht.readHumidity();
+
+  // Exibe a luminosidade no display LCD
+  exibirMensagemComValor(luminosidade, 30, 70, "Luz");
+  delay(2000);
+
+  // Exibe a temperatura no display LCD
+  exibirMensagemComValor(temperatura, 10, 30, "Temp");
+  delay(2000);
+
+  // Exibe a umidade no display LCD
+  exibirMensagemComValor(umidade, 50, 70, "Umid");
+  delay(2000);
+
+  // Calcula a probabilidade de chuva
+  float probabilidadeDeChuva = calcularProbabilidadeDeChuva(luminosidade, temperatura, umidade);
+
+  // Exibe a probabilidade de chuva no display LCD
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Prob. Chuva:");
+  lcd.setCursor(0, 1);
+  lcd.print(probabilidadeDeChuva);
+  lcd.print("%");
+
+  Serial.print("Probabilidade de Chuva: ");
+  Serial.print(probabilidadeDeChuva);
+  Serial.println("%");
+
+  // Controla os LEDs e o buzzer com base na probabilidade de chuva
+  if (probabilidadeDeChuva > 70) {
+    // Alta probabilidade de chuva
+    digitalWrite(led_vermelho_pin, HIGH);
+    digitalWrite(led_amarelo_pin, LOW);
+    digitalWrite(led_verde_pin, LOW);
+    digitalWrite(buzzer_pin, HIGH); // Liga o Buzzer
+  } else if (probabilidadeDeChuva > 30) {
+    // Probabilidade intermediária de chuva
+    digitalWrite(led_vermelho_pin, LOW);
+    digitalWrite(led_amarelo_pin, HIGH);
+    digitalWrite(led_verde_pin, LOW);
+    digitalWrite(buzzer_pin, HIGH); // Liga o Buzzer
+  } else {
+    // Baixa probabilidade de chuva
+    digitalWrite(led_vermelho_pin, LOW);
+    digitalWrite(led_amarelo_pin, LOW);
+    digitalWrite(led_verde_pin, HIGH);
+    digitalWrite(buzzer_pin, LOW); // Desliga o Buzzer
+  }
+
+  delay(2000); // Espera 2 segundos antes de reiniciar o loop
+}
