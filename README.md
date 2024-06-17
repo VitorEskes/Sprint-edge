@@ -6,13 +6,22 @@
 
 <h2> :handshake: Equipe</h2>h2> 
 <p>
-<li>Vitor Alves Titus Eskes RM555137 </li><li> Nathan Craveiro Gonçalves Amin  RM555508 </li><li> Gabriel Matias Simões / RM556171 </li></p>
+  <li>Vitor Alves Titus Eskes RM555137 </li>
+  <li> Nathan Craveiro Gonçalves Amin  RM555508 </li>
+  <li> Gabriel Matias Simões / RM556171 </li>
+</p>
 
 <h2> :man_technologist: Como Utilização</h2> 
-[Montagem do Hardware: Conecte os componentes conforme o esquema de conexão fornecido no código. Configuração do Código: Carregue o código no Arduino IDE. -se de instalar as bibliotecas certifique-se de permissão (DHT e LiquidCrystal). Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicam a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.](Montagem do Hardware: Conecte os componentes conforme o esquema de ligação fornecido no código. Configuração do Código: Carregue o código no Arduino IDE. Verifique-se de instalar as bibliotecas de permissão (DHT e LiquidCrystal). Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicando a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.)
-
+<p>
+  <li>Montagem do Hardware: Conecte os componentes conforme o esquema de conexão fornecido no código.</li>
+  <li>Configuração do Código: Carregue o código no Arduino IDE. -se de instalar as bibliotecas certifique-se de permissão (DHT e LiquidCrystal). </li>
+  <li>Execução: Ligue o Arduino e observe o funcionamento do sistema. Os LEDs e o buzzer indicam a probabilidade de baixa visibilidade com base nos dados encontrados pelos sensores.</li>
+</p>
+  
 <h2> :zap: Componentes Utilizados</h2>h2> 
-**Sensor DHT22 para medição de temperatura e umidade Sensor LDR para medição de luminosidade LEDs (Verde, Amarelo e Vermelho) para indicar a probabilidade de baixa visibilidade Buzzer para fornecer alertas sonoros Display LCD para exibir os dados encontrados Funcionamento do Sistema O sistema de coleta de dados ambientais usando os sensores e calcula a probabilidade de baixa visibilidade. Com base nessa probabilidade, aciona os LEDs e o buzzer para fornecer feedback visual e sonoro. O display LCD exibe os valores calculados e a probabilidade calculada.**
+<p>
+Sensor DHT22 para medição de temperatura e umidade Sensor LDR para medição de luminosidade LEDs (Verde, Amarelo e Vermelho) para indicar a probabilidade de baixa visibilidade Buzzer para fornecer alertas sonoros Display LCD para exibir os dados encontrados Funcionamento do Sistema O sistema de coleta de dados ambientais usando os sensores e calcula a probabilidade de baixa visibilidade. Com base nessa probabilidade, aciona os LEDs e o buzzer para fornecer feedback visual e sonoro. O display LCD exibe os valores calculados e a probabilidade calculada.
+</p>
 
 
 <h3 align="left">Vídeo explicativo:</h3>
