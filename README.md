@@ -40,6 +40,8 @@
 img src="https://github.com/VitorEskes/Sprite-edge/assets/72994409/3a770b1c-64e7-4f8d-8058-70f09d41f9ca" width="0px" /
 /div>
 
+<h3>Link do  projeto: https://wokwi.com/projects/396810541874265089</h3><br>
+
 <h3 align="left">Vídeo explicativo:</h3>
 <p align="left">
 <a href="https://youtu.be/AyBM0FrU1Lc" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="link do video" height="30" width="40" /></a>
